@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Portofolio Saya</title>
+   <style>
+      body {
+         font-family: 'Arial', sans-serif;
+         margin: 0;
+         padding: 0;
+         background-color: #ecaed0;
+         color: #333;
+         line-height: 1.6;
+         display: flex;
+         flex-direction: column;
+         min-height: 100vh;
+      }                              
+      header {
+         background-color: #ecb7d8;
+         color: white;
+         padding: 20px 0;
+         text-align: center;
+      }
+      main {
+         padding: 20px;
+         flex: 1;
+         display: flex;
+         flex-direction: column; /* Menyusun secara vertikal */
+         gap: 20px;
+      }
+      section {
+         background: white;
+         padding: 20px;
+         border-radius: 10px;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+         color: #fabbe5;
+         border-bottom: 2px solid #e5afd5;
+         padding-bottom: 10px;
+      }
+      .projects {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         gap: 20px;
+      }
+      figure {
+         flex: 1 1 calc(25% - 40px);
+         max-width: 300px;
+         margin: 0;
+      }
+      img {
+         width: 100%;
+         border-radius: 10px;
+         box-shadow: 0 4px 8px rgba(202, 108, 187, 0.1);
+      }
+      footer {
+         background-color: #965b7d;
+         color: white;
+         text-align: center;
+         padding: 10px 0;
+      }
+      a {
+         color: #eeaccd;
+         text-decoration: none;
+      }
+      a:hover {
+         text-decoration: underline;
+      }
+      @media (max-width: 768px) {
+         .projects {
+            flex-direction: column;
+            align-items: center;
+         }
+         figure {
+            flex: 1 1 100%;
+         }
+      }
+   </style>
+</head>
+<body>
+   <header>
+      <h1>Bilqis Riska</h1>
+      <p>Web Developer | Designer | Freelancer</p>
+   </header>
+   <main>
+      <section>
+         <h2>Tentang Saya</h2>
+         <p>Saya adalah seorang pengembang web dengan pengalaman dalam HTML, CSS, dan JavaScript.</p>
+      </section>
+      <section>
+         <h2>Proyek</h2>
+         <div class="projects">
+            <figure>
+               <img src="https://picsum.photos/300/200?random=1" alt="Proyek 1">
+            </figure>
+            <figure>
+               <img src="https://picsum.photos/300/200?random=2" alt="Proyek 2">
+            </figure>
+            <figure>
+               <img src="https://picsum.photos/300/200?random=3" alt="Proyek 3">
+            </figure>
+            <figure>
+               <img src="https://picsum.photos/300/200?random=4" alt="Proyek 4">
+            </figure>
+         </div>
+      </section>
+   </main>
+   <footer>
+      <h2>Kontak</h2>
+      <p>Email: <a href="iqiss9608@gmail.com">iqiss9608@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/bilqis" target="_blank">linkedin.com/in/bilqis</a></p>
+   </footer>
+</body>
+</html>
